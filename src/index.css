@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500;700&family=Bellefair&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-menu {
+    padding: min(30vh, 10rem) 2rem;
+    background-color: hsl(0 0% 0% / 0.5);
+
+    @apply hidden gap-5 uppercase fixed flex-col z-10 inset-0 left-[30%] h-full sm:flex sm:flex-row sm:p-0 sm:static sm:gap-16 sm:mt-0 md:gap-14 lg:gap-20;
+  }
+  .nav-line {
+    @apply h-px flex-grow ml-16 z-10 hidden md:inline-block bg-gray-700;
+    width: clamp(5vw, 10vw, 50vw);
+  }
+  @supports (backdrop-filter: blur(1rem)) {
+    .nav-menu {
+      background-color: hsl(0 0% 100% / 0.1);
+      backdrop-filter: blur(1rem);
+    }
+    @media (min-width: 640px) {
+      .nav-menu {
+        padding-block: 2rem;
+        padding-inline: clamp(3rem, 5vw, 10rem);
+        margin-left: -20px;
+      }
+    }
+  }
+}

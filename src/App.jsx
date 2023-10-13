@@ -4,11 +4,9 @@ import Navbar from './components/shared/Navbar'
 const App = () => {
   return (
     <>
-      <div className='flex flex-col'>
+      <div className='flex flex-col w-full h-screen relative'>
         <Navbar />
-        <main>
-          <Outlet />
-        </main>
+        <Outlet />
       </div>
     </>
   )
