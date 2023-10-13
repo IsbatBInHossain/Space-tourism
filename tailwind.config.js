@@ -8,6 +8,15 @@ export default {
       'barlow-condensed': ['Barlow Condensed', 'sans-serif'],
       bellefair: ['Bellefair', 'serif'],
     },
+    screens: {
+      xs: '375px',
+
+      sm: '640px',
+
+      md: '768px',
+
+      lg: '1080px',
+    },
   },
   plugins: [],
 }

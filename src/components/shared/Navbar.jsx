@@ -17,9 +17,9 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='flex justify-between items-center absolute top-0 left-0 w-full h-20 text-white md:mt-8'>
+    <nav className='flex justify-between items-center absolute top-0 left-0 w-full h-24 text-white md:mt-8'>
       <div
-        className='w-10 h-10 sm:w-12 sm:h-12 z-50 ml-8'
+        className='w-10 h-10 sm:w-12 sm:h-12 z-50 ml-14'
         aria-controls='nav-menu'
       >
         <img src='/assets/shared/logo.svg' />
@@ -28,7 +28,7 @@ const Navbar = () => {
 
       <div className=' font-barlow-condensed '>
         <div
-          className='block absolute right-8 sm:hidden w-8 h-8 z-50'
+          className='block absolute right-8 top-6 sm:hidden w-8 h-8 z-50'
           id='menu'
           onClick={toggleMenu}
         >
