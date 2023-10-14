@@ -15,7 +15,7 @@ const Home = () => {
           experience!
         </p>
       </div>
-      <div className=' flex justify-center items-center xs:w-36 xs:h-36 w-24 h-24 sm:w-60 sm:h-60 lg:w-[274px] lg:h-[274px] lg:mr-[165px] lg:mt-72 sm:mt-10 mr-10 bg-white rounded-full'>
+      <div className=' flex justify-center items-center xs:w-36 xs:h-36 w-24 h-24 sm:w-60 sm:h-60 lg:w-[274px] lg:h-[274px] lg:mr-[165px] lg:mt-72 sm:mt-10 mr-10 bg-white rounded-full translate-x-1/4'>
         <button className=' text-xl uppercase font-bellefair tracking-[1.25px] sm:text-[32px] sm:tracking-[2px]'>
           Explore
         </button>

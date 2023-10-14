@@ -35,9 +35,7 @@ const Navbar = () => {
           <img src={imageSrc} alt='menu' />
         </div>
         <ul
-          className={`nav-menu ${
-            isMenuOpen ? 'translate-x-0' : 'translate-x-[100%]'
-          } sm:flex`}
+          className={`nav-menu ${isMenuOpen ? 'flex' : 'hidden'} sm:flex`}
           id='nav-menu'
         >
           <li>
