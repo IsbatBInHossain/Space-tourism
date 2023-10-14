@@ -50,7 +50,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/destination'>
+            <Link to='/destination/moon'>
               <span
                 aria-hidden
                 className='font-bold mr-2 inline-block sm:hidden md:inline-block'
@@ -61,7 +61,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/crew'>
+            <Link to='/crew/commander'>
               <span
                 aria-hidden
                 className='font-bold mr-2 inline-block sm:hidden md:inline-block'
@@ -72,7 +72,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/technology'>
+            <Link to='/technology/vehicle'>
               <span
                 aria-hidden
                 className='font-bold mr-2 inline-block sm:hidden md:inline-block'
