@@ -28,14 +28,16 @@ const Navbar = () => {
 
       <div className=' font-barlow-condensed '>
         <div
-          className='block absolute right-8 top-6 sm:hidden w-8 h-8 z-50'
+          className='block absolute right-8 cursor-pointer top-6 sm:hidden w-8 h-8 z-50'
           id='menu'
           onClick={toggleMenu}
         >
           <img src={imageSrc} alt='menu' />
         </div>
         <ul
-          className={`nav-menu ${isMenuOpen ? 'flex' : 'hidden'} sm:flex`}
+          className={`nav-menu ${
+            isMenuOpen ? 'translate-x-0' : 'translate-x-[100%]'
+          } sm:flex`}
           id='nav-menu'
         >
           <li>

@@ -13,7 +13,7 @@ export default {
 
       sm: '640px',
 
-      md: '768px',
+      md: '821px',
 
       lg: '1080px',
     },

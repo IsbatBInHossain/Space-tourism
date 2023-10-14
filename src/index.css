@@ -9,7 +9,9 @@
     padding: min(30vh, 10rem) 2rem;
     background-color: hsl(0 0% 0% / 0.5);
 
-    @apply hidden gap-5 text-base uppercase fixed flex-col z-10 inset-0 left-[30%] h-full sm:flex sm:flex-row sm:p-0 sm:static sm:gap-6 sm:mt-0 lg:gap-20 tracking-[2.7px];
+    transition: transform, ease-out, 0.3s;
+
+    @apply flex gap-5 text-base uppercase fixed flex-col z-10 inset-0 left-[30%] h-full sm:flex sm:flex-row translate-x-[100%] sm:p-0 sm:static sm:gap-6 sm:mt-0 lg:gap-20 tracking-[2.7px];
   }
   .nav-line {
     @apply h-px flex-grow ml-16 z-10 hidden md:inline-block bg-[#979797];
@@ -18,7 +20,7 @@
   @supports (backdrop-filter: blur(1rem)) {
     .nav-menu {
       background-color: hsl(0 0% 100% / 0.1);
-      backdrop-filter: blur(1rem);
+      backdrop-filter: blur(15px);
     }
   }
   @media (min-width: 640px) {
