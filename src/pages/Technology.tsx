@@ -1,9 +1,7 @@
 import React from 'react'
 import { data } from '../lib/constants/data'
 
-const technologies = data.technologys
-
-console.log(technologies)
+const technologies = data.technology
 
 const Technology = () => {
   return (

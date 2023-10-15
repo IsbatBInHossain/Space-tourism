@@ -1,11 +1,13 @@
-import { Link } from 'react-router-dom'
-import { data } from '../lib/constants/data'
+import { Link, useParams } from 'react-router-dom'
+import { data, index } from '../lib/constants/data'
 
 const destinations = data.destinations
 
-console.log(destinations)
-
 const Destination = () => {
+  const { place } = useParams()
+
+  const destination = destinations[index.destinations[place]]
+
   return (
     <section className='w-full min-h-screen flex flex-col gap-6 sm:gap-10 md:flex-row md:justify-center md:gap-36 items-center bg-no-repeat bg-cover bg-center text-white md:bg-[url("/assets/destination/background-destination-desktop.jpg")] sm:bg-[url("/assets/destination/background-destination-tablet.jpg")] bg-[url("/assets/destination/background-destination-mobile.jpg")]'>
       <div className=' flex flex-col gap-6 items-center lg:gap-8 md:ml-20 md:pt-24 lg:pt-0'>
@@ -16,7 +18,7 @@ const Destination = () => {
           </h2>
         </div>
         <div className='w-44 h-44 sm:w-[300px] sm:h-[300px] lg:w-[445px] lg:ml-40 md:h-[445px]'>
-          <img src='/assets/destination/image-moon.png' alt='moon picture' />
+          <img src={destination.images.png} alt={`${destination.name} image`} />
         </div>
       </div>
 
@@ -38,13 +40,10 @@ const Destination = () => {
 
         <div className='flex flex-col gap-2 justify-center items-center md:items-start'>
           <h1 className=' font-bellefair uppercase text-[56px] sm:text-[80px] md:text-[100px]'>
-            Moon
+            {destination.name}
           </h1>
           <p className=' pl-6 pr-6 font-barlow text-[15px]  text-center md:text-left md:pl-0 text-[#D0D6F9] leading-6 w-[45ch] sm:text-base sm:leading-7 sm:w-[72ch] md:text-lg md:leading-8 md:w-[45ch]'>
-            See our planet as you’ve never seen it before. A perfect relaxing
-            trip away to help regain perspective and come back refreshed. While
-            you’re there, take in some history by visiting the Luna 2 and Apollo
-            11 landing sites.
+            {destination.description}
           </p>
         </div>
         <div className=' h-px w-[80%] bg-[#979797] mt-6 sm:mt-8' />
@@ -53,13 +52,15 @@ const Destination = () => {
             <h3 className=' font-barlow-condensed text-sm tracking-[2.36px] uppercase text-[#D0D6F9]'>
               Avg. distance
             </h3>
-            <p className=' font-bellefair text-[28px]'>384,400 km</p>
+            <p className=' font-bellefair text-[28px]'>
+              {destination.distance}
+            </p>
           </div>
           <div className='text-center'>
             <h3 className=' font-barlow-condensed text-sm tracking-[2.36px] uppercase text-[#D0D6F9]'>
               Est. travel time
             </h3>
-            <p className=' font-bellefair text-[28px]'>3 days</p>
+            <p className=' font-bellefair text-[28px]'>{destination.travel}</p>
           </div>
         </div>
       </div>

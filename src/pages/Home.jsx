@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <section className='w-full h-full flex flex-col md:flex-row md:justify-between justify-center items-center bg-no-repeat bg-cover bg-center md:bg-[url("/assets/home/background-home-desktop.jpg")] sm:bg-[url("/assets/home/background-home-tablet.jpg")] bg-[url("/assets/home/background-home-mobile.jpg")]'>
+    <section className='w-full min-h-screen flex flex-col md:flex-row md:justify-between justify-center items-center bg-no-repeat bg-cover bg-center md:bg-[url("/assets/home/background-home-desktop.jpg")] sm:bg-[url("/assets/home/background-home-tablet.jpg")] bg-[url("/assets/home/background-home-mobile.jpg")]'>
       <div className='flex flex-col items-center mt-16 lg:mt-72 text-gray-400 lg:ml-36 md:ml-16 xs:mb-16 mb-6 md:text-left text-center md:items-start'>
         <h2 className=' uppercase font-barlow-condensed tracking-[2.7px] sm:text-xl sm:tracking-[3.37px] lg:text-[28px] lg:tracking-[4.72px]'>
           So, you want to travel to
